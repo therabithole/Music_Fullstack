@@ -1,0 +1,158 @@
+@import "./fonts.css";
+@import "./colors.css";
+
+.musicApp {
+    display: grid;
+    grid-template-rows: 1fr fit-content 1fr;
+    grid-template-areas:
+        "musicHeader"
+        "musicGrid";
+}
+.header {
+    justify-content: center;
+    grid-area: musicHeader;
+    display: grid;
+    grid-template-areas:
+        "headerTitle"
+        "headerSubTitle";
+
+    .header-title {
+        justify-self: center;
+        align-self: center;
+        height: fit-content;
+        grid-area: headerTitle;
+        font-size: 10vh;
+        font-family: TiemposHeadline-Medium;
+        font-weight: 700;
+        color: var(--Purple);
+    }
+
+    .header-subTitle {
+        justify-self: center;
+
+        grid-area: headerSubTitle;
+        color: var(--Brown);
+        font-family: TiemposHeadline-Light;
+    }
+}
+
+.musicGrid {
+    grid-area: musicGrid;
+    display: grid;
+
+    grid-template-rows: 30vh 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "tiles"
+        "tracks";
+}
+.tiles {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: tiles;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    grid-column-gap: 10vw;
+}
+
+.tile {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    grid-row-gap: 0.5vh;
+    grid-template-rows: 4vh auto auto auto 4vh;
+    grid-template-areas:
+        "."
+        "svg"
+        "tileName"
+        "selection"
+        ".";
+
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid rgb(187, 190, 197);
+    width: 200px;
+
+    border-radius: 1vh;
+
+    svg {
+        grid-area: svg;
+        height: 50px;
+        width: 50px;
+        justify-self: center;
+    }
+
+    .checkboxGroup {
+        grid-area: selection;
+        justify-self: center;
+        input:active {
+            cursor: pointer;
+        }
+    }
+    .tile-name {
+        grid-area: tileName;
+        justify-self: center;
+    }
+}
+.tile:hover {
+    border: 1px solid #a09eca;
+    background-color: #eef2ff;
+    cursor: pointer;
+}
+
+svg {
+    fill: red;
+}
+
+.tracks {
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 2vh;
+    grid-row-gap: 5vh;
+    grid-area: tracks;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    justify-content: center;
+}
+
+.track {
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 0.5vh;
+    grid-template-areas:
+        "picture"
+        "singer"
+        "album"
+        "name";
+    height: 40vh;
+    width: 20vw;
+
+    img {
+        height: 200px;
+        width: 200px;
+        background-size: cover;
+
+        object-fit: contain;
+        grid-area: picture;
+    }
+    .singer {
+        grid-area: singer;
+        font-size: 2vh;
+        font-family: TiemposHeadline-Semibold;
+        font-weight: 400;
+    }
+    .album {
+        grid-area: album;
+        font-size: 2vh;
+        font-family: TiemposHeadline-LightItalic;
+        font-weight: 300;
+    }
+    .name {
+        grid-area: name;
+        font-size: 2vh;
+        font-family: TiemposHeadline;
+        font-weight: 300;
+    }
+}

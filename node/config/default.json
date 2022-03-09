@@ -1,0 +1,4 @@
+{
+  "db": "mongodb://localhost/spotify",
+  "port": "3500"
+}

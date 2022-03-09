@@ -1,0 +1,40 @@
+@font-face {
+  font-family: TiemposHeadline-Black;
+  src: url(../assets/fonts/TiemposHeadline-Black.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-BlackItalic;
+  src: url(../assets/fonts/TiemposHeadline-BlackItalic.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-Bold;
+  src: url(../assets/fonts/TiemposHeadline-Bold.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-BoldItalic;
+  src: url(../assets/fonts/TiemposHeadline-BoldItalic.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-Light;
+  src: url(../assets/fonts/TiemposHeadline-Light.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-LightItalic;
+  src: url(../assets/fonts/TiemposHeadline-LightItalic.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-Medium;
+  src: url(../assets/fonts/TiemposHeadline-Medium.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-Regular;
+  src: url(../assets/fonts/TiemposHeadline-Regular.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-Semibold;
+  src: url(../assets/fonts/TiemposHeadline-Semibold.otf);
+}
+@font-face {
+  font-family: TiemposHeadline-SemiboldItalic;
+  src: url(../assets/fonts/TiemposHeadline-SemiboldItalic.otf);
+}
